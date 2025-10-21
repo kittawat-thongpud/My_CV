@@ -1,137 +1,42 @@
-/* Universal Reset and Fonts */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
-}
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">🚀 **BrandName**</div>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-/* Utility Container for Centering Content */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <main class="hero">
+        <div class="container">
+            <h1>The Solution Your Business Needs</h1>
+            <p class="subtitle">Stop wasting time and start achieving your goals with our powerful, all-in-one platform.</p>
+            <a href="#signup" class="cta-button">
+                Get Started Today **(Free Trial!)**
+            </a>
+        </div>
+    </main>
 
-/* Header and Navigation Styles */
-header {
-    background: #ffffff;
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-}
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 BrandName. All rights reserved.</p>
+        </div>
+    </footer>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: #007bff; /* Primary brand color */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li a {
-    color: #555;
-    text-decoration: none;
-    padding: 0 15px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-/* Hero Section (Main Content) */
-.hero {
-    background: linear-gradient(135deg, #e0f7fa, #b3e5fc); /* Light blue gradient background */
-    text-align: center;
-    padding: 100px 0; /* Plenty of vertical space */
-    min-height: 70vh; /* Takes up most of the viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #004d80;
-}
-
-.hero .subtitle {
-    font-size: 1.3em;
-    margin-bottom: 30px;
-    color: #555;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Call-to-Action (CTA) Button */
-.cta-button {
-    display: inline-block;
-    background-color: #ff6f00; /* Eye-catching action color (Orange) */
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 700;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button:hover {
-    background-color: #e65100; /* Darker orange on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-}
-
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #ccc;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Responsive Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        margin-top: 10px;
-        padding: 10px 0;
-        justify-content: center;
-    }
-
-    nav ul li a {
-        padding: 0 10px;
-    }
-
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero .subtitle {
-        font-size: 1.1em;
-    }
-}
+</body>
+</html>
